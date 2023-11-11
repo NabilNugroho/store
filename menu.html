@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - JusDream</title>
+    <!-- Tambahkan tautan CSS Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Gaya tautan navbar */
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.25rem 0.25rem;
+      }
+
+      /* Gaya tautan navbar saat dihover */
+      nav ul li a:hover {
+        background-color: #34d399;
+        transition: background-color 0.3s;
+      }
+
+      /* Gaya tautan navbar untuk halaman aktif */
+      nav ul li.active a {
+        background-color: #059669;
+      }
+
+      .product {
+        min-height: 600px; /* Sesuaikan tinggi yang diinginkan */
+      }
+
+      .product-image img {
+        width: 100%; /* Menyesuaikan lebar gambar dengan parent */
+        height: auto; /* Agar aspek ratio gambar tetap terjaga */
+      }
+
+      .product h3 {
+        margin-top: 0.5rem; /* Mengurangi margin atas pada judul */
+      }
+
+      .product p {
+        margin-bottom: 0.5rem; /* Mengurangi margin bawah pada deskripsi */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-green-500 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl text-white font-semibold">JusDream</h1>
+
+        <ul class="flex space-x-4">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container mx-auto my-8">
+      <h2 class="text-3xl text-center font-semibold mb-4">Menu Jus</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Produk Jus 1 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus alpukat.png"
+                alt="Jus Alpukat"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Alpukat</h3>
+            <p class="text-gray-600">
+              Jus krimi alpukat yang lezat dan bergizi.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Alpukat"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 2 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus anggur.png"
+                alt="Jus Anggur"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Anggur</h3>
+            <p class="text-gray-600">
+              Jus anggur segar dengan rasa manis alami.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Anggur"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 3 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus delima.png"
+                alt="Jus Delima"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Delima</h3>
+            <p class="text-gray-600">Jus delima penuh antioksidan dan segar.</p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Delima"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 4 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus jambu.png"
+                alt="Jus Jambu"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Jambu</h3>
+            <p class="text-gray-600">
+              Jus jambu segar dengan rasa manis alami.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Jambu"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 5 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus jeruk.png"
+                alt="Jus Jeruk"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Jeruk</h3>
+            <p class="text-gray-600">Jus jeruk segar dengan rasa asam alami.</p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Jeruk"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 6 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus mangga.png"
+                alt="Jus Mangga"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Mangga</h3>
+            <p class="text-gray-600">
+              Jus mangga segar dengan rasa manis alami.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Mangga"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 7 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus nanas.png"
+                alt="Jus Nanas"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Nanas</h3>
+            <p class="text-gray-600">
+              Jus nanas segar dengan rasa manis alami.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Nanas"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 8 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus strawberry.png"
+                alt="Jus Strawberry"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Strawberry</h3>
+            <p class="text-gray-600">
+              Jus strawberry segar dengan rasa manis alami.
+            </p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Strawberry"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- Produk Jus 9 -->
+        <div class="product">
+          <div
+            class="bg-white rounded-lg shadow-md p-4 flex flex-col items-center"
+            style="min-height: 450px"
+          >
+            <div class="product-image">
+              <img
+                src="images/cropped-jus tomat.png"
+                alt="Jus Tomat"
+                width="300"
+                height="300"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Jus Tomat</h3>
+            <p class="text-gray-600">Jus tomat segar dengan rasa asam alami.</p>
+            <a
+              href="#"
+              class="bg-green-500 text-white py-2 px-4 rounded-full mt-4 block text-center hover:bg-green-600 transition duration-300"
+              data-product="Jus Tomat"
+              id="orderButton"
+              >Pesan Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-300 py-4">
+      <div class="container mx-auto text-center">
+        <p class="text-gray-600">&copy; 2023 JusDream. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Script JavaScript untuk mengarahkan ke halaman contact -->
+    <script>
+      const orderButtons = document.querySelectorAll("#orderButton");
+
+      orderButtons.forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          const productName = button.getAttribute("data-product");
+          window.location.href = `contact.html?product=${productName}`;
+        });
+      });
+    </script>
+  </body>
+</html>
